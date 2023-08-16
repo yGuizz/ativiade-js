@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6</title>
+</head>
+<body>
+
+    <script>
+function calcularMediaAritmetica(array) {
+  if (array.length === 0) {
+    return 0;
+  }
+
+  const soma = array.reduce((acumulador, numero) => acumulador + numero, 0);
+  const media = soma / array.length;
+  return media;
+}
+
+const numeros = [10, 20, 30, 40, 50];
+const media = calcularMediaAritmetica(numeros);
+document.write(`A média aritmética dos números é: ${media}`);
+
+    </script>
+    
+</body>
+</html>

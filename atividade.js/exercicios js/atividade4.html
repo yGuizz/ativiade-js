@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+</head>
+<body>
+
+    <script>
+        
+
+        function Isprime()
+        {
+        var numero = 20;
+        var qntdivisores = 0;
+        var divisor = 0;
+
+        for (divisor=1; divisor<= numero; divisor++){
+            if (numero%divisor==0){
+                qntdivisores = qntdivisores + 1;
+            }
+        }
+        if(qntdivisores == 2){
+            console.log("o numero " +numero+ " é primo")
+        }else{
+            console.log("o numero " +numero+ " não é primo")
+        }
+
+        
+        }
+
+        Isprime();
+
+
+    </script>
+    
+</body>
+</html>

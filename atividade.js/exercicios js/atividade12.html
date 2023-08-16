@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 12</title>
+</head>
+<body>
+    <script>
+        function ehPalindromo(str) {
+    str = str.replace(/\s/g, '').toLowerCase();
+    return str === str.split('').reverse().join('');
+}
+
+
+console.log(ehPalindromo("radar"));   
+console.log(ehPalindromo("palavra"));    
+console.log(ehPalindromo("Ame a ema"));  
+
+    </script>
+</body>
+</html>

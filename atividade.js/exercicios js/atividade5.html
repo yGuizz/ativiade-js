@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade5</title>
+</head>
+<body>
+    <script>
+
+function calcularFatorial(numero) {
+  if (numero === 0 || numero === 1) {
+    return 1;
+  } else {
+    return numero * calcularFatorial(numero - 1);
+  }
+}
+
+const numero = 5;
+const fatorial = calcularFatorial(numero);
+document.write(`O fatorial de ${numero} é ${fatorial}`);
+
+    </script>
+
+
+</body>
+</html>
